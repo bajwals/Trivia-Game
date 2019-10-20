@@ -5,11 +5,11 @@
     <title>Trivia Game</title>
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</head>
+<body>    
+    <script src="./assets/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head>
-<body>
     <script type="text/javascript" src="./assets/logic.js"></script>
 
     <nav class="navbar navbar-light bg-light">
@@ -17,17 +17,21 @@
     </nav>
 
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4"></h1>
+        <div class="container" id="inside-jumbotron">
+            <h1>Timer: </h1><span id="countdown-timer">00:00</span>
+            <h1 class="display-4"><img src="./assets/images/bmw.jpg"></img></h1>
             <p class="lead">Please select a choice from below:</p>
             <div class="container choice-box">
-                <a class="button" id="choice-a">A</a>
-                <a class="button" id="choice-b">B</a>
-                <a class="button" id="choice-c">C</a>
-                <a class="button" id="choice-d">D</a>
+                <button class="button" id="japanese">Japanese</button>
+                <button class="button" id="german">German</button>
+                <button class="button" id="american">American</button>
+                <button class="button" id="swedish">Swedish</button>
             </div>
         </div>
     </div>
+
+    <button id="my-btn">TEST</button>
+
 
 </body>
 </html>
